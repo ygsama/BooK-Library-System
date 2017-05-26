@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2666F70D-9808-43FA-8D39-2AE9F02C317E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>图书管理系统</RootNamespace>
+    <AssemblyName>图书管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlterPwdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterPwdForm.Designer.cs">
+      <DependentUpon>AlterPwdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowBooks.Designer.cs">
+      <DependentUpon>BorrowBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindBookForm.Designer.cs">
+      <DependentUpon>FindBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertNewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertNewBook.Designer.cs">
+      <DependentUpon>InsertNewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDictionary.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBooks.Designer.cs">
+      <DependentUpon>ReturnBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="UpdateIndivForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateIndivForm.Designer.cs">
+      <DependentUpon>UpdateIndivForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AlterPwdForm.resx">
+      <DependentUpon>AlterPwdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowBooks.resx">
+      <DependentUpon>BorrowBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindBookForm.resx">
+      <DependentUpon>FindBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertNewBook.resx">
+      <DependentUpon>InsertNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReturnBooks.resx">
+      <DependentUpon>ReturnBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateIndivForm.resx">
+      <DependentUpon>UpdateIndivForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
